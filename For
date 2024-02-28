@@ -1,0 +1,35 @@
+package lacos_repeticao;
+
+import java.util.Scanner;
+
+public class ExFor {
+
+	public static void main(String[] args) {
+	
+		
+		int numero1;
+		int numero2;
+		int multiplo;
+		
+		Scanner leia = new Scanner(System.in);
+		
+		 System.out.println("Por favor, digite dois números, sendo o segundo maior que o primeiro.\n\n\nDigite o primeiro número:");
+	        numero1 = leia.nextInt();
+
+	        System.out.println("Digite o segundo número:");
+	        numero2 = leia.nextInt();
+	        
+	        if (numero1>numero2) {
+	        	System.out.println("O intervalo é inválido!O segundo número deve ser maior que o primeiro.");
+	        } else {
+
+	        System.out.println("Os números múltiplos de 3 e 5 entre " + numero1 + " e " + numero2 + " são:");
+
+	        for (multiplo = numero1; multiplo <= numero2; multiplo++) {
+	            if (multiplo % 3 == 0 && multiplo % 5 == 0) {
+	                System.out.println(multiplo);}
+	        }}
+	        leia.close();
+	}}
+	        
+	
